@@ -15,6 +15,7 @@ import javafx.scene.layout.VBox;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 
 public class Controller implements Initializable {
 
@@ -40,6 +41,9 @@ public class Controller implements Initializable {
 
     @FXML
     private Button btnSignout;
+     
+    @FXML
+    private Button exit;
 
     @FXML
     private Pane pnlCustomer;
@@ -98,4 +102,10 @@ public class Controller implements Initializable {
             pnlOrders.toFront();
         }
     }
+    
+    @FXML
+    void exitbtn(ActionEvent event) {
+        exit.setCancelButton(true);
+    }
+    
 }
