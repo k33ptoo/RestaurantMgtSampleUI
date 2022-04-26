@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
@@ -14,6 +15,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="1050.0" style="-fx-background-color: #02030A;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
    <children>
@@ -121,6 +123,14 @@
                   <Insets left="50.0" />
                </padding>
             </Button>
+            <Pane prefHeight="120.0" prefWidth="256.0">
+               <children>
+                  <FontAwesomeIcon fill="#eeefef" iconName="FACEBOOK" layoutX="163.0" layoutY="95.0" />
+                  <FontAwesomeIcon fill="#eeefef" iconName="INSTAGRAM" layoutX="185.0" layoutY="95.0" text="" />
+                  <FontAwesomeIcon fill="#eeefef" iconName="TWITTER" layoutX="213.0" layoutY="95.0" />
+                  <Text fill="#e7e5e5" layoutX="100.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check our social media" wrappingWidth="125.33334732055687" />
+               </children>
+            </Pane>
          </children>
       </VBox>
       <StackPane layoutX="258.0" prefHeight="576.0" prefWidth="793.0" style="-fx-background-color: #02030A;">
@@ -223,11 +233,6 @@
                         <Image url="@../images/icons8_Search_52px.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="exit" layoutX="753.0" layoutY="2.0" mnemonicParsing="false" onAction="#exitbtn" style="-fx-background-color: Transparent;" text="X" textFill="#f40b0b">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Button>
                </children>
             </Pane>
          </children>

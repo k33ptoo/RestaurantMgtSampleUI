@@ -14,7 +14,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("Home.fxml"));
         primaryStage.setScene(new Scene(root));
-        //set stage borderless
+        //set stage border
         primaryStage.initStyle(StageStyle.DECORATED);
 
         //drag it here
@@ -28,6 +28,7 @@ public class Main extends Application {
             primaryStage.setY(event.getScreenY() - y);
 
         });
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
